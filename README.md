@@ -187,25 +187,7 @@ entities:
   - entity: sensor.nordkapp_heater_fault_status
   - entity: binary_sensor.nordkapp_heater_heating_running
   - entity: binary_sensor.nordkapp_heater_problem
-```
-
 ---
-
-## 🚀 GitHub Veröffentlichung
-
-Um dieses Repository unter Ihrem eigenen GitHub-Account zu veröffentlichen:
-
-1. Auf [github.com/new](https://github.com/new) ein neues öffentliches Repository anlegen (z. B. `nordkapp-diesel-heater-ble`).
-2. Im lokalen Projektordner ausführen:
-   ```bash
-   git init -b main
-   git add .
-   git commit -m "feat: initial release of Nordkapp & Booyood BLE integration with fan, auto-stop and time-sync"
-   git remote add origin https://github.com/<DEIN-BENUTZERNAME>/nordkapp-diesel-heater-ble.git
-   git push -u origin main
-   ```
-3. Auf GitHub unter **Releases -> Create a new release** das Release `v1.1.0` taggen.
-
 ---
 
 ## 📄 Lizenz
