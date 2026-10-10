@@ -187,7 +187,8 @@ entities:
   - entity: sensor.nordkapp_heater_fault_status
   - entity: binary_sensor.nordkapp_heater_heating_running
   - entity: binary_sensor.nordkapp_heater_problem
----
+```
+
 ---
 
 ## 📄 Lizenz
