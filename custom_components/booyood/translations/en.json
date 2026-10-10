@@ -1,0 +1,89 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configure Nordkapp / Booyood Parking Heater BLE",
+        "description": "Select or enter your heater's Bluetooth MAC address, PIN and protocol version.",
+        "data": {
+          "mac": "Bluetooth Device",
+          "name": "Custom Name",
+          "pin": "PIN / Password (Default: 1234)",
+          "protocol_version": "Protocol Version",
+          "external_temp_sensor": "External Temperature Sensor (Optional)"
+        }
+      },
+      "bluetooth_confirm": {
+        "title": "Discovered Heater: {name}",
+        "description": "Do you want to add the discovered Nordkapp / Booyood diesel parking heater to Home Assistant?",
+        "data": {
+          "name": "Custom Name",
+          "pin": "PIN / Password (Default: 1234)",
+          "protocol_version": "Protocol Version",
+          "external_temp_sensor": "External Temperature Sensor (Optional)"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "This heater is already configured in Home Assistant."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Parking Heater Options",
+        "description": "Configure optional settings for the parking heater.",
+        "data": {
+          "external_temp_sensor": "External Room Temperature Sensor"
+        }
+      }
+    }
+  },
+  "entity": {
+    "switch": {
+      "power": {
+        "name": "Heater Power"
+      },
+      "auto_start_stop": {
+        "name": "Auto Start/Stop (Thermostat)"
+      }
+    },
+    "number": {
+      "timer_duration": {
+        "name": "Timer Duration (Minutes)"
+      },
+      "startup_temp_diff": {
+        "name": "Startup Temperature Offset"
+      },
+      "shutdown_temp_diff": {
+        "name": "Shutdown Temperature Offset"
+      },
+      "ventilation_speed": {
+        "name": "Ventilation Fan Speed"
+      },
+      "tank_volume": {
+        "name": "Tank Capacity"
+      }
+    },
+    "button": {
+      "sync_time": {
+        "name": "Synchronize Time"
+      }
+    },
+    "select": {
+      "mode": {
+        "name": "Operating Mode",
+        "state": {
+          "gear": "Gear / Level",
+          "thermostat": "Thermostat",
+          "ventilation": "Ventilation / Fan",
+          "boost": "Boost / High Heat"
+        }
+      }
+    },
+    "sensor": {
+      "fuel_consumption": {
+        "name": "Current Fuel Consumption"
+      }
+    }
+  }
+}

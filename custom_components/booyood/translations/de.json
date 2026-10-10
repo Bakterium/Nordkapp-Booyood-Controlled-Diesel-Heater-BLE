@@ -1,0 +1,89 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Nordkapp / Booyood Standheizung BLE einrichten",
+        "description": "Wählen Sie Ihre Standheizung aus oder geben Sie die Bluetooth-MAC-Adresse, PIN und Protokollversion ein.",
+        "data": {
+          "mac": "Bluetooth-Gerät",
+          "name": "Name der Heizung",
+          "pin": "PIN / Passwort (Standard: 1234)",
+          "protocol_version": "Protokollversion",
+          "external_temp_sensor": "Externer Temperatursensor (Optional)"
+        }
+      },
+      "bluetooth_confirm": {
+        "title": "Gefundene Standheizung: {name}",
+        "description": "Möchten Sie die gefundene Nordkapp / Booyood Diesel-Standheizung zu Home Assistant hinzufügen?",
+        "data": {
+          "name": "Name der Heizung",
+          "pin": "PIN / Passwort (Standard: 1234)",
+          "protocol_version": "Protokollversion",
+          "external_temp_sensor": "Externer Temperatursensor (Optional)"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Diese Standheizung ist bereits in Home Assistant eingerichtet."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Optionen für Standheizung",
+        "description": "Konfigurieren Sie optionale Einstellungen für die Standheizung.",
+        "data": {
+          "external_temp_sensor": "Externer Raumtemperatursensor"
+        }
+      }
+    }
+  },
+  "entity": {
+    "switch": {
+      "power": {
+        "name": "Standheizung An/Aus"
+      },
+      "auto_start_stop": {
+        "name": "Automatischer Start/Stopp (Thermostat)"
+      }
+    },
+    "number": {
+      "timer_duration": {
+        "name": "Timer-Laufzeit (Minuten)"
+      },
+      "startup_temp_diff": {
+        "name": "Start-Temperaturversatz"
+      },
+      "shutdown_temp_diff": {
+        "name": "Stop-Temperaturversatz"
+      },
+      "ventilation_speed": {
+        "name": "Lüftungsstärke"
+      },
+      "tank_volume": {
+        "name": "Tankinhalt"
+      }
+    },
+    "button": {
+      "sync_time": {
+        "name": "Uhrzeit synchronisieren"
+      }
+    },
+    "select": {
+      "mode": {
+        "name": "Betriebsmodus",
+        "state": {
+          "gear": "Leistungsstufe",
+          "thermostat": "Thermostat",
+          "ventilation": "Lüftung",
+          "boost": "Maximale Heizleistung"
+        }
+      }
+    },
+    "sensor": {
+      "fuel_consumption": {
+        "name": "Aktueller Dieselverbrauch"
+      }
+    }
+  }
+}
